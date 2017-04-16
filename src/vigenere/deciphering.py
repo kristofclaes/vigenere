@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 from .constants import ALPHABET
+from .utils import pair_up_characters
 
 
 def decipher_character(enciphered_character, key):
@@ -19,3 +20,15 @@ def decipher_character(enciphered_character, key):
     deciphered_character_index = (enciphered_character_index - key_index) % 26
 
     return ALPHABET[deciphered_character_index]
+
+
+def decipher(enciphered_text, key):
+    """
+    Deciphers the enciphered string using the key.
+    :param str enciphered_text: The enciphered text that needs to be deciphered.
+    :param str key: The key to decipher the enciphered text with.
+    :return: The enciphered text deciphered with the key.
+    :rtype: str
+    """
+    character_pairs = pair_up_characters(enciphered_text, key)
+    return "".join(decipher_character(character, key_character) for character, key_character in character_pairs)

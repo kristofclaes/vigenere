@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 import pytest
-from vigenere.deciphering import decipher_character
+from vigenere.deciphering import decipher_character, decipher
 
 
 @pytest.mark.parametrize('key,deciphered_character', [
@@ -275,3 +275,17 @@ def test_deciphering_unknown_character_returns_character(character, key):
 @pytest.mark.parametrize('key', ['1', '.', '"', '?', '!'])
 def test_deciphering_with_unknown_key_returns_character(character, key):
     assert decipher_character(character, key) == character
+
+
+@pytest.mark.parametrize('enciphered_text,key,plaintext', [
+    ('hello', 'aaaaa', 'HELLO'),
+    ('HELLO', 'aaaaa', 'HELLO'),
+    ('HELLO', 'AAAAA', 'HELLO'),
+    ('IFMMP', 'BBBBB', 'HELLO'),
+    ('HFNOS', 'ABCDE', 'HELLO'),
+    ('HFLMO', 'AB', 'HELLO'),
+    ('VIGENERE', 'A', 'VIGENERE'),
+    ('QQMIAIII', 'VIGENERE', 'VIGENERE')
+])
+def test_decipher_string(enciphered_text, key, plaintext):
+    assert decipher(enciphered_text, key) == plaintext

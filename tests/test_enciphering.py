@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 import pytest
-from vigenere.enciphering import encipher_character
+from vigenere.enciphering import encipher_character, encipher
 
 
 @pytest.mark.parametrize('key,enciphered_character', [
@@ -274,3 +274,17 @@ def test_enciphering_unknown_character_returns_character(character, key):
 @pytest.mark.parametrize('key', ['1', '.', '"', '?', '!'])
 def test_enciphering_with_unknown_key_returns_character(character, key):
     assert encipher_character(character, key) == character
+
+
+@pytest.mark.parametrize('plaintext,key,enciphered_text', [
+    ('hello', 'aaaaa', 'HELLO'),
+    ('HELLO', 'aaaaa', 'HELLO'),
+    ('HELLO', 'AAAAA', 'HELLO'),
+    ('HELLO', 'BBBBB', 'IFMMP'),
+    ('HELLO', 'ABCDE', 'HFNOS'),
+    ('HELLO', 'AB', 'HFLMO'),
+    ('VIGENERE', 'A', 'VIGENERE'),
+    ('VIGENERE', 'VIGENERE', 'QQMIAIII')
+])
+def test_encipher_string(plaintext, key, enciphered_text):
+    assert encipher(plaintext, key) == enciphered_text
