@@ -10,8 +10,8 @@ def encipher_character(character, key):
     :rtype: str
     """
     try:
-        character_index = ALPHABET.index(character)
-        key_index = ALPHABET.index(key)
+        character_index = ALPHABET.index(character.upper())
+        key_index = ALPHABET.index(key.upper())
     except ValueError:
         return character
 

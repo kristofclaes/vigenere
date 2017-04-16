@@ -10,6 +10,7 @@ from vigenere.enciphering import encipher_character
 ])
 def test_encipher_character_a(key, enciphered_character):
     assert encipher_character('A', key) == enciphered_character
+    assert encipher_character('a', key) == enciphered_character
 
 
 @pytest.mark.parametrize('key,enciphered_character', [
@@ -19,6 +20,7 @@ def test_encipher_character_a(key, enciphered_character):
 ])
 def test_encipher_character_b(key, enciphered_character):
     assert encipher_character('B', key) == enciphered_character
+    assert encipher_character('b', key) == enciphered_character
 
 
 @pytest.mark.parametrize('key,enciphered_character', [
@@ -28,6 +30,7 @@ def test_encipher_character_b(key, enciphered_character):
 ])
 def test_encipher_character_c(key, enciphered_character):
     assert encipher_character('C', key) == enciphered_character
+    assert encipher_character('c', key) == enciphered_character
 
 
 @pytest.mark.parametrize('key,enciphered_character', [
@@ -37,6 +40,7 @@ def test_encipher_character_c(key, enciphered_character):
 ])
 def test_encipher_character_d(key, enciphered_character):
     assert encipher_character('D', key) == enciphered_character
+    assert encipher_character('d', key) == enciphered_character
 
 
 @pytest.mark.parametrize('key,enciphered_character', [
@@ -46,6 +50,7 @@ def test_encipher_character_d(key, enciphered_character):
 ])
 def test_encipher_character_e(key, enciphered_character):
     assert encipher_character('E', key) == enciphered_character
+    assert encipher_character('e', key) == enciphered_character
 
 
 @pytest.mark.parametrize('key,enciphered_character', [
@@ -55,6 +60,7 @@ def test_encipher_character_e(key, enciphered_character):
 ])
 def test_encipher_character_f(key, enciphered_character):
     assert encipher_character('F', key) == enciphered_character
+    assert encipher_character('f', key) == enciphered_character
 
 
 @pytest.mark.parametrize('key,enciphered_character', [
@@ -64,6 +70,7 @@ def test_encipher_character_f(key, enciphered_character):
 ])
 def test_encipher_character_g(key, enciphered_character):
     assert encipher_character('G', key) == enciphered_character
+    assert encipher_character('g', key) == enciphered_character
 
 
 @pytest.mark.parametrize('key,enciphered_character', [
@@ -72,7 +79,7 @@ def test_encipher_character_g(key, enciphered_character):
     ('S', 'Z'), ('T', 'A'), ('U', 'B'), ('V', 'C'), ('W', 'D'), ('X', 'E'), ('Y', 'F'), ('Z', 'G')
 ])
 def test_encipher_character_h(key, enciphered_character):
-    assert encipher_character('H', key) == enciphered_character
+    assert encipher_character('h', key) == enciphered_character
 
 
 @pytest.mark.parametrize('key,enciphered_character', [
@@ -82,6 +89,7 @@ def test_encipher_character_h(key, enciphered_character):
 ])
 def test_encipher_character_i(key, enciphered_character):
     assert encipher_character('I', key) == enciphered_character
+    assert encipher_character('i', key) == enciphered_character
 
 
 @pytest.mark.parametrize('key,enciphered_character', [
@@ -91,6 +99,7 @@ def test_encipher_character_i(key, enciphered_character):
 ])
 def test_encipher_character_j(key, enciphered_character):
     assert encipher_character('J', key) == enciphered_character
+    assert encipher_character('j', key) == enciphered_character
 
 
 @pytest.mark.parametrize('key,enciphered_character', [
@@ -100,6 +109,7 @@ def test_encipher_character_j(key, enciphered_character):
 ])
 def test_encipher_character_k(key, enciphered_character):
     assert encipher_character('K', key) == enciphered_character
+    assert encipher_character('k', key) == enciphered_character
 
 
 @pytest.mark.parametrize('key,enciphered_character', [
@@ -109,6 +119,7 @@ def test_encipher_character_k(key, enciphered_character):
 ])
 def test_encipher_character_l(key, enciphered_character):
     assert encipher_character('L', key) == enciphered_character
+    assert encipher_character('l', key) == enciphered_character
 
 
 @pytest.mark.parametrize('key,enciphered_character', [
@@ -118,6 +129,7 @@ def test_encipher_character_l(key, enciphered_character):
 ])
 def test_encipher_character_m(key, enciphered_character):
     assert encipher_character('M', key) == enciphered_character
+    assert encipher_character('m', key) == enciphered_character
 
 
 @pytest.mark.parametrize('key,enciphered_character', [
@@ -127,6 +139,7 @@ def test_encipher_character_m(key, enciphered_character):
 ])
 def test_encipher_character_n(key, enciphered_character):
     assert encipher_character('N', key) == enciphered_character
+    assert encipher_character('n', key) == enciphered_character
 
 
 @pytest.mark.parametrize('key,enciphered_character', [
@@ -136,6 +149,7 @@ def test_encipher_character_n(key, enciphered_character):
 ])
 def test_encipher_character_o(key, enciphered_character):
     assert encipher_character('O', key) == enciphered_character
+    assert encipher_character('o', key) == enciphered_character
 
 
 @pytest.mark.parametrize('key,enciphered_character', [
@@ -145,6 +159,7 @@ def test_encipher_character_o(key, enciphered_character):
 ])
 def test_encipher_character_p(key, enciphered_character):
     assert encipher_character('P', key) == enciphered_character
+    assert encipher_character('p', key) == enciphered_character
 
 
 @pytest.mark.parametrize('key,enciphered_character', [
@@ -154,6 +169,7 @@ def test_encipher_character_p(key, enciphered_character):
 ])
 def test_encipher_character_q(key, enciphered_character):
     assert encipher_character('Q', key) == enciphered_character
+    assert encipher_character('q', key) == enciphered_character
 
 
 @pytest.mark.parametrize('key,enciphered_character', [
@@ -163,6 +179,7 @@ def test_encipher_character_q(key, enciphered_character):
 ])
 def test_encipher_character_r(key, enciphered_character):
     assert encipher_character('R', key) == enciphered_character
+    assert encipher_character('r', key) == enciphered_character
 
 
 @pytest.mark.parametrize('key,enciphered_character', [
@@ -172,6 +189,7 @@ def test_encipher_character_r(key, enciphered_character):
 ])
 def test_encipher_character_s(key, enciphered_character):
     assert encipher_character('S', key) == enciphered_character
+    assert encipher_character('s', key) == enciphered_character
 
 
 @pytest.mark.parametrize('key,enciphered_character', [
@@ -181,6 +199,7 @@ def test_encipher_character_s(key, enciphered_character):
 ])
 def test_encipher_character_t(key, enciphered_character):
     assert encipher_character('T', key) == enciphered_character
+    assert encipher_character('t', key) == enciphered_character
 
 
 @pytest.mark.parametrize('key,enciphered_character', [
@@ -190,6 +209,7 @@ def test_encipher_character_t(key, enciphered_character):
 ])
 def test_encipher_character_u(key, enciphered_character):
     assert encipher_character('U', key) == enciphered_character
+    assert encipher_character('u', key) == enciphered_character
 
 
 @pytest.mark.parametrize('key,enciphered_character', [
@@ -199,6 +219,7 @@ def test_encipher_character_u(key, enciphered_character):
 ])
 def test_encipher_character_v(key, enciphered_character):
     assert encipher_character('V', key) == enciphered_character
+    assert encipher_character('v', key) == enciphered_character
 
 
 @pytest.mark.parametrize('key,enciphered_character', [
@@ -208,6 +229,7 @@ def test_encipher_character_v(key, enciphered_character):
 ])
 def test_encipher_character_w(key, enciphered_character):
     assert encipher_character('W', key) == enciphered_character
+    assert encipher_character('w', key) == enciphered_character
 
 
 @pytest.mark.parametrize('key,enciphered_character', [
@@ -217,6 +239,7 @@ def test_encipher_character_w(key, enciphered_character):
 ])
 def test_encipher_character_x(key, enciphered_character):
     assert encipher_character('X', key) == enciphered_character
+    assert encipher_character('x', key) == enciphered_character
 
 
 @pytest.mark.parametrize('key,enciphered_character', [
@@ -226,6 +249,7 @@ def test_encipher_character_x(key, enciphered_character):
 ])
 def test_encipher_character_y(key, enciphered_character):
     assert encipher_character('Y', key) == enciphered_character
+    assert encipher_character('y', key) == enciphered_character
 
 
 @pytest.mark.parametrize('key,enciphered_character', [
@@ -235,6 +259,7 @@ def test_encipher_character_y(key, enciphered_character):
 ])
 def test_encipher_character_z(key, enciphered_character):
     assert encipher_character('Z', key) == enciphered_character
+    assert encipher_character('z', key) == enciphered_character
 
 
 @pytest.mark.parametrize('character', ['1', '.', '"', '?', '!'])

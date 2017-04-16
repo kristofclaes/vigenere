@@ -11,8 +11,8 @@ def decipher_character(enciphered_character, key):
     :rtype: str
     """
     try:
-        enciphered_character_index = ALPHABET.index(enciphered_character)
-        key_index = ALPHABET.index(key)
+        enciphered_character_index = ALPHABET.index(enciphered_character.upper())
+        key_index = ALPHABET.index(key.upper())
     except ValueError:
         return enciphered_character
 

@@ -10,6 +10,7 @@ from vigenere.deciphering import decipher_character
 ])
 def test_decipher_character_a(key, deciphered_character):
     assert decipher_character('A', key) == deciphered_character
+    assert decipher_character('a', key) == deciphered_character
 
 
 @pytest.mark.parametrize('key,deciphered_character', [
@@ -19,6 +20,7 @@ def test_decipher_character_a(key, deciphered_character):
 ])
 def test_decipher_character_b(key, deciphered_character):
     assert decipher_character('B', key) == deciphered_character
+    assert decipher_character('b', key) == deciphered_character
 
 
 @pytest.mark.parametrize('key,deciphered_character', [
@@ -28,6 +30,7 @@ def test_decipher_character_b(key, deciphered_character):
 ])
 def test_decipher_character_c(key, deciphered_character):
     assert decipher_character('C', key) == deciphered_character
+    assert decipher_character('c', key) == deciphered_character
 
 
 @pytest.mark.parametrize('key,deciphered_character', [
@@ -37,6 +40,7 @@ def test_decipher_character_c(key, deciphered_character):
 ])
 def test_decipher_character_d(key, deciphered_character):
     assert decipher_character('D', key) == deciphered_character
+    assert decipher_character('d', key) == deciphered_character
 
 
 @pytest.mark.parametrize('key,deciphered_character', [
@@ -46,6 +50,7 @@ def test_decipher_character_d(key, deciphered_character):
 ])
 def test_decipher_character_e(key, deciphered_character):
     assert decipher_character('E', key) == deciphered_character
+    assert decipher_character('e', key) == deciphered_character
 
 
 @pytest.mark.parametrize('key,deciphered_character', [
@@ -55,6 +60,7 @@ def test_decipher_character_e(key, deciphered_character):
 ])
 def test_decipher_character_f(key, deciphered_character):
     assert decipher_character('F', key) == deciphered_character
+    assert decipher_character('f', key) == deciphered_character
 
 
 @pytest.mark.parametrize('key,deciphered_character', [
@@ -64,6 +70,7 @@ def test_decipher_character_f(key, deciphered_character):
 ])
 def test_decipher_character_g(key, deciphered_character):
     assert decipher_character('G', key) == deciphered_character
+    assert decipher_character('g', key) == deciphered_character
 
 
 @pytest.mark.parametrize('key,deciphered_character', [
@@ -73,6 +80,7 @@ def test_decipher_character_g(key, deciphered_character):
 ])
 def test_decipher_character_h(key, deciphered_character):
     assert decipher_character('H', key) == deciphered_character
+    assert decipher_character('h', key) == deciphered_character
 
 
 @pytest.mark.parametrize('key,deciphered_character', [
@@ -82,6 +90,7 @@ def test_decipher_character_h(key, deciphered_character):
 ])
 def test_decipher_character_i(key, deciphered_character):
     assert decipher_character('I', key) == deciphered_character
+    assert decipher_character('i', key) == deciphered_character
 
 
 @pytest.mark.parametrize('key,deciphered_character', [
@@ -91,6 +100,7 @@ def test_decipher_character_i(key, deciphered_character):
 ])
 def test_decipher_character_j(key, deciphered_character):
     assert decipher_character('J', key) == deciphered_character
+    assert decipher_character('j', key) == deciphered_character
 
 
 @pytest.mark.parametrize('key,deciphered_character', [
@@ -100,6 +110,7 @@ def test_decipher_character_j(key, deciphered_character):
 ])
 def test_decipher_character_k(key, deciphered_character):
     assert decipher_character('K', key) == deciphered_character
+    assert decipher_character('k', key) == deciphered_character
 
 
 @pytest.mark.parametrize('key,deciphered_character', [
@@ -109,6 +120,7 @@ def test_decipher_character_k(key, deciphered_character):
 ])
 def test_decipher_character_l(key, deciphered_character):
     assert decipher_character('L', key) == deciphered_character
+    assert decipher_character('l', key) == deciphered_character
 
 
 @pytest.mark.parametrize('key,deciphered_character', [
@@ -118,6 +130,7 @@ def test_decipher_character_l(key, deciphered_character):
 ])
 def test_decipher_character_m(key, deciphered_character):
     assert decipher_character('M', key) == deciphered_character
+    assert decipher_character('m', key) == deciphered_character
 
 
 @pytest.mark.parametrize('key,deciphered_character', [
@@ -127,6 +140,7 @@ def test_decipher_character_m(key, deciphered_character):
 ])
 def test_decipher_character_n(key, deciphered_character):
     assert decipher_character('N', key) == deciphered_character
+    assert decipher_character('n', key) == deciphered_character
 
 
 @pytest.mark.parametrize('key,deciphered_character', [
@@ -136,6 +150,7 @@ def test_decipher_character_n(key, deciphered_character):
 ])
 def test_decipher_character_o(key, deciphered_character):
     assert decipher_character('O', key) == deciphered_character
+    assert decipher_character('o', key) == deciphered_character
 
 
 @pytest.mark.parametrize('key,deciphered_character', [
@@ -145,6 +160,7 @@ def test_decipher_character_o(key, deciphered_character):
 ])
 def test_decipher_character_p(key, deciphered_character):
     assert decipher_character('P', key) == deciphered_character
+    assert decipher_character('p', key) == deciphered_character
 
 
 @pytest.mark.parametrize('key,deciphered_character', [
@@ -154,6 +170,7 @@ def test_decipher_character_p(key, deciphered_character):
 ])
 def test_decipher_character_q(key, deciphered_character):
     assert decipher_character('Q', key) == deciphered_character
+    assert decipher_character('q', key) == deciphered_character
 
 
 @pytest.mark.parametrize('key,deciphered_character', [
@@ -163,6 +180,7 @@ def test_decipher_character_q(key, deciphered_character):
 ])
 def test_decipher_character_r(key, deciphered_character):
     assert decipher_character('R', key) == deciphered_character
+    assert decipher_character('r', key) == deciphered_character
 
 
 @pytest.mark.parametrize('key,deciphered_character', [
@@ -172,6 +190,7 @@ def test_decipher_character_r(key, deciphered_character):
 ])
 def test_decipher_character_s(key, deciphered_character):
     assert decipher_character('S', key) == deciphered_character
+    assert decipher_character('s', key) == deciphered_character
 
 
 @pytest.mark.parametrize('key,deciphered_character', [
@@ -181,6 +200,7 @@ def test_decipher_character_s(key, deciphered_character):
 ])
 def test_decipher_character_t(key, deciphered_character):
     assert decipher_character('T', key) == deciphered_character
+    assert decipher_character('t', key) == deciphered_character
 
 
 @pytest.mark.parametrize('key,deciphered_character', [
@@ -190,6 +210,7 @@ def test_decipher_character_t(key, deciphered_character):
 ])
 def test_decipher_character_u(key, deciphered_character):
     assert decipher_character('U', key) == deciphered_character
+    assert decipher_character('u', key) == deciphered_character
 
 
 @pytest.mark.parametrize('key,deciphered_character', [
@@ -199,6 +220,7 @@ def test_decipher_character_u(key, deciphered_character):
 ])
 def test_decipher_character_v(key, deciphered_character):
     assert decipher_character('V', key) == deciphered_character
+    assert decipher_character('v', key) == deciphered_character
 
 
 @pytest.mark.parametrize('key,deciphered_character', [
@@ -208,6 +230,7 @@ def test_decipher_character_v(key, deciphered_character):
 ])
 def test_decipher_character_w(key, deciphered_character):
     assert decipher_character('W', key) == deciphered_character
+    assert decipher_character('w', key) == deciphered_character
 
 
 @pytest.mark.parametrize('key,deciphered_character', [
@@ -217,6 +240,7 @@ def test_decipher_character_w(key, deciphered_character):
 ])
 def test_decipher_character_x(key, deciphered_character):
     assert decipher_character('X', key) == deciphered_character
+    assert decipher_character('x', key) == deciphered_character
 
 
 @pytest.mark.parametrize('key,deciphered_character', [
@@ -226,6 +250,7 @@ def test_decipher_character_x(key, deciphered_character):
 ])
 def test_decipher_character_y(key, deciphered_character):
     assert decipher_character('Y', key) == deciphered_character
+    assert decipher_character('y', key) == deciphered_character
 
 
 @pytest.mark.parametrize('key,deciphered_character', [
@@ -235,6 +260,7 @@ def test_decipher_character_y(key, deciphered_character):
 ])
 def test_decipher_character_z(key, deciphered_character):
     assert decipher_character('Z', key) == deciphered_character
+    assert decipher_character('z', key) == deciphered_character
 
 
 @pytest.mark.parametrize('character', ['1', '.', '"', '?', '!'])
