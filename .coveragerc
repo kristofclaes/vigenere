@@ -1,0 +1,13 @@
+[run]
+branch = True
+source =
+    vigenere
+
+[paths]
+source =
+   src/vigenere
+   .tox/*/lib/python*/site-packages/vigenere
+   .tox/pypy/site-packages/vigenere
+
+[report]
+show_missing = True
