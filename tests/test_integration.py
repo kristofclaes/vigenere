@@ -3,6 +3,7 @@ import pytest
 from vigenere.enciphering import encipher_character, encipher
 from vigenere.deciphering import decipher_character, decipher
 
+
 @pytest.mark.parametrize('character', ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M',
                                        'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
 @pytest.mark.parametrize('key', ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M',

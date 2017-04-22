@@ -15,6 +15,7 @@ def test_pair_up_with_text_longer_than_key():
 
     assert pairs == [('A', 'D'), ('B', 'E'), ('C', 'D')]
 
+
 def test_pair_up_with_key_longer_than_text():
     """Tests that the characters of a text and a key are paired up correctly when the key is longer than the text."""
     pairs = pair_up_characters('AB', 'DEF')

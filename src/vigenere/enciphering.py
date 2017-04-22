@@ -2,6 +2,7 @@
 from .constants import ALPHABET
 from .utils import pair_up_characters
 
+
 def encipher_character(character, key):
     """
     Enciphers the character using the key.
